@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Schema &amp; FAQ Generator · JSON-LD structured data · SEOryon</title>
+  <meta name="description" content="Generate valid JSON-LD structured data — FAQ, Article, Product, LocalBusiness, HowTo and more — from a simple form. Copy the ready-to-paste script tag. Runs entirely in your browser; nothing is sent to a server. Free, by SEOryon." />
+  <meta name="keywords" content="schema generator, FAQ schema generator, JSON-LD generator, structured data generator, free schema markup, schema.org generator, FAQPage schema, Article schema, Product schema, LocalBusiness schema, GEO, AI citation" />
+  <meta property="og:title" content="Free Schema &amp; FAQ Generator · JSON-LD structured data" />
+  <meta property="og:description" content="Pick a schema type, fill a simple form, get ready-to-paste JSON-LD. FAQ, Article, Product, LocalBusiness, HowTo and more. Free, runs in your browser." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://schema.seoryon.com" />
+  <meta property="og:image" content="https://schema.seoryon.com/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://schema.seoryon.com" />
+  <link rel="alternate" hreflang="en" href="https://schema.seoryon.com/" />
+  <link rel="alternate" hreflang="de" href="https://schema.seoryon.com/?lang=de" />
+  <link rel="alternate" hreflang="fr" href="https://schema.seoryon.com/?lang=fr" />
+  <link rel="alternate" hreflang="x-default" href="https://schema.seoryon.com/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SEOryon Schema & FAQ Generator",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://schema.seoryon.com",
+      "description": "Free client-side generator that builds valid JSON-LD structured data (FAQ, Article, Product, LocalBusiness, HowTo, Organization, Person, WebSite, BreadcrumbList, Event) from a simple form, with a copy-ready script tag.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "creator": { "@type": "Organization", "name": "SEOryon", "url": "https://seoryon.com" }
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="https://app.seoryon.com/?utm_source=schema-generator&utm_medium=brand" class="brand" aria-label="SEOryon">
+      <img src="/logo.png" class="logo-img" alt="SEOryon" />
+    </a>
+    <nav class="navlinks">
+      <a href="#how" class="nav-secondary" data-i18n="nav_how">How it works</a>
+      <a href="#faq" class="nav-secondary" data-i18n="nav_faq">FAQ</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="de">DE</button>
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+      </div>
+      <a href="https://app.seoryon.com/signup?utm_source=schema-generator&utm_medium=topbar&utm_campaign=trial" class="cta-link" data-i18n="cta_trial">Start free trial →</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Two-column hero: headline + sub on the left, product preview on the
+           right — mirrors score / inspect / roi / cite so the free-tool family
+           stays visually consistent. Drop a hero image at web/schemahero.png. -->
+      <div class="hero-top">
+        <div class="hero-content">
+          <div class="hero-meta">
+            <span class="status-dot"></span>
+            <span class="status-text" data-i18n="hero_pill">Runs in your browser · No sign-up · Free</span>
+          </div>
+          <h1 data-i18n-html="hero_h1">Free <span class="brand-text">Schema &amp; FAQ generator</span></h1>
+          <p class="sub" data-i18n="hero_sub">Pick a schema type, fill in a simple form, and get valid, ready-to-paste JSON-LD structured data — FAQ, Article, Product, LocalBusiness and more. Copy the script tag into your page's &lt;head&gt;. Everything runs in your browser; nothing is uploaded.</p>
+        </div>
+        <figure class="hero-visual">
+          <img src="/schemahero.png" alt="Preview of the SEOryon Schema & FAQ Generator — a schema-type picker, a simple form, and live JSON-LD output ready to copy." data-i18n-alt="hero_img_alt" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- The generator: type picker + form on the left, live JSON-LD on the right. -->
+    <section class="gen" aria-label="Schema and FAQ generator">
+      <div class="typebar" id="typebar" role="tablist" aria-label="Schema type">
+        <!-- type chips rendered by app.js -->
+      </div>
+
+      <div class="gen-grid">
+        <form id="genForm" class="gen-card input-card" autocomplete="off">
+          <div class="gen-card-head">
+            <div>
+              <h2 class="card-kicker" id="typeKicker" data-i18n="form_kicker">Schema fields</h2>
+              <p class="type-desc" id="typeDesc"></p>
+            </div>
+          </div>
+          <div id="formFields"><!-- fields rendered by app.js --></div>
+        </form>
+
+        <section class="gen-card output-card">
+          <div class="out-head">
+            <h2 class="card-kicker" data-i18n="out_kicker">Generated JSON-LD</h2>
+            <div class="out-actions">
+              <div class="seg" role="group" aria-label="Output format">
+                <button type="button" class="seg-btn active" data-fmt="script" data-i18n="fmt_script">Script tag</button>
+                <button type="button" class="seg-btn" data-fmt="json" data-i18n="fmt_json">Raw JSON</button>
+              </div>
+            </div>
+          </div>
+          <div class="validation" id="validation" aria-live="polite"><!-- rendered by app.js --></div>
+          <div class="code-wrap">
+            <pre class="code" id="codeBlock" tabindex="0"><code id="codeOut"></code></pre>
+          </div>
+          <div class="out-buttons">
+            <button type="button" class="btn btn-primary" id="copyBtn" data-i18n="copy_btn">Copy</button>
+            <button type="button" class="btn btn-ghost" id="downloadBtn" data-i18n="download_btn">Download .json</button>
+          </div>
+          <p class="out-note" data-i18n-html="out_note">Paste this into your page's <code>&lt;head&gt;</code>. The field keys stay in English — that's the schema.org spec; your values are your own.</p>
+        </section>
+      </div>
+
+      <p class="gen-privacy">
+        <span aria-hidden="true">🔒</span>
+        <span data-i18n="gen_privacy">This generator runs entirely in your browser. Nothing you type is sent to a server, stored, or shared.</span>
+      </p>
+    </section>
+
+    <section class="how" id="how">
+      <h2 data-i18n="how_h2">How it works</h2>
+      <div class="grid3">
+        <div class="card">
+          <div class="num">1</div>
+          <h3 data-i18n="how1_h3">Pick a schema type</h3>
+          <p data-i18n="how1_p">FAQ, Article, Product, LocalBusiness, HowTo and more. FAQ is the one AI engines love to quote — start there.</p>
+        </div>
+        <div class="card">
+          <div class="num">2</div>
+          <h3 data-i18n="how2_h3">Fill in the form</h3>
+          <p data-i18n="how2_p">Required fields are marked; hints explain each one. Add or remove rows for things like FAQ pairs and HowTo steps. The JSON-LD updates live as you type.</p>
+        </div>
+        <div class="card">
+          <div class="num">3</div>
+          <h3 data-i18n="how3_h3">Copy &amp; paste</h3>
+          <p data-i18n="how3_p">Copy the ready-to-paste script tag (or download the JSON) and drop it into your page's head. That's it — valid structured data, no code.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honest framing: what structured data actually does. No rich-snippet promise. -->
+    <section class="learn" id="why">
+      <span class="learn-kicker" data-i18n="why_kicker">WHY STRUCTURED DATA</span>
+      <h2 data-i18n="why_h2">What schema actually does for you.</h2>
+      <p class="learn-lead" data-i18n-html="why_lead">Structured data is a machine-readable summary of your page. It won't magically unlock Google rich results — Google <strong>restricted FAQ rich results to government and health sites in 2023, then removed them for all sites in May 2026</strong>, so FAQ schema no longer shows as a rich result at all, and any tool that promises otherwise is bluffing. What it <em>does</em> do is real and worth doing:</p>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <h3 data-i18n="why_c1_h">AI engines can extract &amp; cite it</h3>
+          <p data-i18n="why_c1_p">ChatGPT, Perplexity, Gemini and Google's AI parse structured data to understand and quote your content. FAQ-shaped, clearly-answered content is the pattern that gets pulled into AI answers — the live GEO win.</p>
+        </div>
+        <div class="learn-card">
+          <h3 data-i18n="why_c2_h">Clean, valid page understanding</h3>
+          <p data-i18n="why_c2_p">Correct JSON-LD tells search engines exactly what a page is — an article, a product, a business, an event — its author, price, or opening hours. It removes ambiguity from how your page is understood.</p>
+        </div>
+        <div class="learn-card">
+          <h3 data-i18n="why_c3_h">Valid by construction</h3>
+          <p data-i18n="why_c3_p">Every type here follows schema.org and Google's documented required and recommended fields. We mark what's required, flag what's missing, and only ever emit valid JSON — so you can paste with confidence.</p>
+        </div>
+        <div class="learn-card">
+          <h3 data-i18n="why_c4_h">Yours, and private</h3>
+          <p data-i18n="why_c4_p">The generator is plain JavaScript running in your browser. Your inputs never leave the page — there's no server, no API, no upload. Verify it: open your network tab and watch nothing get sent.</p>
+        </div>
+      </div>
+      <p class="method-note" data-i18n-html="why_note">Sources: type definitions from <span class="nowrap">schema.org</span> and required/recommended fields from Google's Rich Results documentation. Output is escaped so a value like <code>&lt;/script&gt;</code> can never break the JSON-LD or inject markup into your page.</p>
+    </section>
+
+    <section class="upsell">
+      <div class="upsell-card">
+        <div class="upsell-left">
+          <span class="oryon-tag">SEORYON</span>
+          <h2 data-i18n-html="upsell_h2">This adds schema to one page. <span class="brand-text">SEOryon adds it to every article — automatically.</span></h2>
+          <p data-i18n="upsell_p">This generator markes up a page by hand. SEOryon builds the right structured data into every article it writes for you, so your content is shaped to be understood and cited by AI from the first draft — answer-first, FAQ-structured, and correctly marked up. It reads real search and AI-citation signals, decides what to publish, writes it, and tracks where you get cited across Google, ChatGPT, Perplexity and Gemini.</p>
+          <a href="https://app.seoryon.com/signup?utm_source=schema-generator&utm_medium=upsell&utm_campaign=trial" class="bigcta" data-i18n="upsell_cta">Start your 3-day free trial →</a>
+          <p class="microcopy" data-i18n="upsell_fine">3-day free trial · 3 published articles · 1 in-depth LLM/GEO audit · Cancel in two clicks.</p>
+        </div>
+        <div class="upsell-right">
+          <div class="upsell-benefit">
+            <h4 data-i18n="ben1_h">Marked up by default</h4>
+            <p data-i18n="ben1_p">Every article ships with the right schema and an answer-first, FAQ-shaped structure — the form AI engines quote — without you touching JSON-LD.</p>
+          </div>
+          <div class="upsell-benefit">
+            <h4 data-i18n="ben2_h">Agency-scale, not agency-price</h4>
+            <p data-i18n="ben2_p">One agent runs the whole research-to-publish loop, so you get the output of a content team from €39/month.</p>
+          </div>
+          <div class="upsell-benefit">
+            <h4 data-i18n="ben3_h">You see where you're cited</h4>
+            <p data-i18n="ben3_p">It tracks your mentions across Google, ChatGPT, Perplexity and Gemini — so structured data becomes a scoreboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2 data-i18n="faq_h2">Questions, answered</h2>
+      <div class="faq-group">
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary data-i18n="faq1_q">Will this get me rich results in Google?</summary>
+            <p data-i18n-html="faq1_a">Honestly, no — and we won't pretend otherwise. Google <strong>restricted FAQ rich results to government and health sites in 2023, then removed them for all sites in May 2026</strong>, so an FAQ schema won't show as a rich result anymore. The real, current value of structured data is two things: it helps <strong>AI engines</strong> (ChatGPT, Perplexity, Gemini, Google's AI) extract and cite your content, and it gives search engines clean, unambiguous data about your page. That's what this tool is for.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq2_q">Why is FAQ the hero here?</summary>
+            <p data-i18n-html="faq2_a">Because FAQ-shaped content — a clear question with a clean, self-contained answer — is the pattern AI engines pull into their answers most readily. Marking it up as <code>FAQPage</code> makes that structure explicit and machine-readable. It's the most direct structured-data lever on AI citation, which is why we put it first.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq3_q">Is the generated JSON-LD actually valid?</summary>
+            <p data-i18n-html="faq3_a">Yes. Each type follows schema.org's definitions and Google's documented required and recommended fields. We flag any missing required fields, and the output is always valid JSON. You can paste it straight into Google's Rich Results Test or the Schema Markup Validator to confirm.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq4_q">Does it send my data anywhere?</summary>
+            <p data-i18n-html="faq4_a">No. There is no server, no API, no upload. The whole generator runs as plain JavaScript in your browser, and nothing you type ever leaves the page. The only thing stored is your language and last-used type, kept locally in your browser.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq5_q">Where do I put the code?</summary>
+            <p data-i18n-html="faq5_a">Copy the <code>&lt;script type="application/ld+json"&gt;…&lt;/script&gt;</code> block and paste it into your page's <code>&lt;head&gt;</code> (the <code>&lt;body&gt;</code> works too). One block per page and per type. If you use a CMS, most have a way to inject a snippet into the head.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq6_q">Is it safe to paste values with quotes or angle brackets?</summary>
+            <p data-i18n-html="faq6_a">Yes — the output is escaped so a value containing <code>&lt;/script&gt;</code>, quotes, or <code>&lt;&gt;</code> can't break the JSON-LD or inject markup into your page. It stays valid JSON either way. Your text is preserved exactly; only the characters that would be unsafe inside a script tag are encoded.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq7_q">Does it work for German and French content?</summary>
+            <p data-i18n-html="faq7_a">Yes. The whole interface — labels, hints, buttons, validation — is in English, German and French. Your input values stay exactly as you type them, in any language. The JSON-LD field <em>keys</em> (like <code>name</code>, <code>author</code>) stay in English because that's the schema.org specification, not a translation choice.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span class="wordmark sm">SEOryon</span> ·
+        <a href="https://app.seoryon.com/?utm_source=schema-generator&utm_medium=footer">app.seoryon.com</a> ·
+        <a href="https://cite.seoryon.com" data-i18n="footer_cite">AI citability grader</a> ·
+        <a href="https://score.seoryon.com" data-i18n="footer_score">Score a live page</a> ·
+        <a href="https://roi.seoryon.com" data-i18n="footer_roi">SEO ROI calculator</a>
+      </div>
+      <p class="microcopy" data-i18n="footer_note">A free JSON-LD schema &amp; FAQ generator by SEOryon — your organic growth engine. Runs entirely in your browser; nothing is sent to a server.</p>
+    </footer>
+  </main>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

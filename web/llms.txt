@@ -1,0 +1,28 @@
+# SEOryon Schema & FAQ Generator
+
+> Free, browser-based generator for valid JSON-LD structured data. Pick a type —
+> FAQ, Article, Product, LocalBusiness, HowTo, Organization, Person, WebSite,
+> BreadcrumbList, Event — fill a simple form, and get a ready-to-paste JSON-LD
+> script tag. No signup, no upload, nothing sent to a server. Built by SEOryon.
+
+The generator runs entirely client-side; nothing you type ever leaves the page.
+Field templates follow schema.org definitions and Google's documented required and
+recommended fields. It makes no rich-result promise — Google restricted FAQ rich
+results to government and health sites in 2023 and removed them for all sites in
+May 2026 — the real value is clean, machine-readable data that AI engines and
+search engines can extract and cite.
+
+## Docs
+
+- [The generator](https://schema.seoryon.com): the tool itself — pick a type, fill the form, copy the JSON-LD
+- [How it works](https://schema.seoryon.com/#how): from a simple form to valid, paste-ready structured data
+- [Why structured data](https://schema.seoryon.com/#why): what schema does now that FAQ rich results are gone
+- [FAQ](https://schema.seoryon.com/#faq): validity, where to paste, and data safety
+
+## Related tools
+
+- [AI Search Readiness Score](https://score.seoryon.com): score any URL 0–100 across 27 deterministic AI-search signals, with concrete fixes
+- [AI Citability Grader](https://cite.seoryon.com): paste text, get a citability score for whether AI engines will quote it
+- [SEO ROI calculator](https://roi.seoryon.com): what organic traffic is worth, in your numbers
+- [Inspect](https://inspect.seoryon.com): free Chrome extension auditing any page's on-page SEO and AI-search readiness in one click
+- [SEOryon](https://seoryon.com): the company behind these tools
