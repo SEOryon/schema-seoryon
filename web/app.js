@@ -468,7 +468,7 @@
       upsell_cta: "Start your 3-day free trial →",
       upsell_fine: "3-day free trial · 3 published articles · 1 in-depth LLM/GEO audit · Cancel in two clicks.",
       ben1_h: "Marked up by default", ben1_p: "Every article ships with the right schema and an answer-first, FAQ-shaped structure — the form AI engines quote — without you touching JSON-LD.",
-      ben2_h: "Agency-scale, not agency-price", ben2_p: "One agent runs the whole research-to-publish loop, so you get the output of a content team from €39/month.",
+      ben2_h: "Agency-scale, not agency-price", ben2_p: "One agent runs the whole research-to-publish loop, so you get the output of a content team from €49/month.",
       ben3_h: "You see where you're cited", ben3_p: "It tracks your mentions across Google, ChatGPT, Perplexity and Gemini — so structured data becomes a scoreboard.",
 
       faq_h2: "Questions, answered",
@@ -626,7 +626,7 @@
       upsell_cta: "Starte deine 3-Tage-Testphase →",
       upsell_fine: "3 Tage kostenlos testen · 3 veröffentlichte Artikel · 1 ausführliches LLM/GEO-Audit · Mit zwei Klicks kündbar.",
       ben1_h: "Standardmäßig ausgezeichnet", ben1_p: "Jeder Artikel erscheint mit dem passenden Schema und einer antwortorientierten, FAQ-förmigen Struktur — der Form, die KI-Engines zitieren — ganz ohne dass du JSON-LD anfasst.",
-      ben2_h: "Agentur-Umfang, kein Agentur-Preis", ben2_p: "Ein Agent übernimmt die ganze Schleife von Recherche bis Veröffentlichung — du bekommst die Leistung eines Content-Teams ab 39 €/Monat.",
+      ben2_h: "Agentur-Umfang, kein Agentur-Preis", ben2_p: "Ein Agent übernimmt die ganze Schleife von Recherche bis Veröffentlichung — du bekommst die Leistung eines Content-Teams ab 49 €/Monat.",
       ben3_h: "Du siehst, wo du zitiert wirst", ben3_p: "Es verfolgt deine Erwähnungen bei Google, ChatGPT, Perplexity und Gemini — so werden strukturierte Daten zur Anzeigetafel.",
 
       faq_h2: "Fragen, beantwortet",
@@ -777,7 +777,7 @@
       upsell_cta: "Démarrez votre essai gratuit de 3 jours →",
       upsell_fine: "Essai gratuit de 3 jours · 3 articles publiés · 1 audit LLM/GEO approfondi · Annulable en deux clics.",
       ben1_h: "Balisé par défaut", ben1_p: "Chaque article part avec le bon schéma et une structure orientée réponse, en forme de FAQ — le format que les moteurs d'IA citent — sans que vous touchiez au JSON-LD.",
-      ben2_h: "Échelle d'agence, sans le prix", ben2_p: "Un seul agent gère toute la boucle recherche-publication : vous obtenez la production d'une équipe de contenu à partir de 39 €/mois.",
+      ben2_h: "Échelle d'agence, sans le prix", ben2_p: "Un seul agent gère toute la boucle recherche-publication : vous obtenez la production d'une équipe de contenu à partir de 49 €/mois.",
       ben3_h: "Vous voyez où vous êtes cité", ben3_p: "Il suit vos mentions sur Google, ChatGPT, Perplexity et Gemini — les données structurées deviennent un tableau de bord.",
 
       faq_h2: "Questions, réponses",
